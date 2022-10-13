@@ -12,30 +12,32 @@
   <title>Digifólio</title>
 </head>
 <body>
-  <!--palavras ('dev' + )-->
+
+
+  <!--palavras ('dev' + 'me')-->
   <main class="card">
     <div class="minhas-info">
-      <img src="src/Images/Logo.jpeg" alt="imagem de perfil">   
+      <img src="src/Images/download.jpg" alt="imagem de perfil">   
       <h1 class="nome">Luiz Eduardo Pozza</h1>
       <h2 class="cargo">Fullstack Developer Júnior</h2>     
       </div>
 
       <div class="conteudo">
         <ul class="abas">
-          <li class="aba selecionada">
+          <li id = 'aba1' class="aba selecionada">
             <img src="src/Images/sobre.gif" alt="icone sobre mim">
           </li>
-          <li class="aba">
+          <li id = 'aba2' class="aba">
             <img src="src/Images/coracao.gif" alt="icone redes sociais">
           </li>
         </ul>
 
-        <div class="info-abas">
-          <div class="info selecionada">
+        <div id = "infoAbas" class="info-abas">
+          <div id = "sobreMim" class="info selecionada">
 
             <h3 class="sub-titulo">Sobre</h3>
 
-              <div class="descricao">
+              <div id = "descricao" class="descricao">
                 <p>
                   Oi! meu nome é Rodrigo da Silva, seja bem-vindo(a)!
                 </p>
@@ -44,20 +46,20 @@
                   Sou uma pessoa apaixonada pela programação desde que eu tinha 15
                   anos. Sempre tive o sonho de trabalhar com programação e
                   atualmente comecei a colocar esse sonho em prática estudando
-                  <span>HTML, CSS e JavaScript.</span> 
+                  <span>HTML, CSS, JavaScript, NodeJs, BootStrap, Express, Dart.</span> 
                   Gosto muito de café (até demais), e meus principais hobbies são
                   jogar MMO RPG, ver animes e séries.
                 </p>
               </div>            
           </div>
 
-          <div class="info">
+          <div id="midias" class="info">
 
             <h3 class="sub-titulo">Minhas mídias</h3>
 
             <ul class="midias-sociais">
             <li>
-              <a target="_blank" href="#" class="curriculo">Currículo</a>
+              <a download = 'devCV' target="_blank" href="src/Images/Luiz Curriculo Dev.pdf" class="curriculo">Currículo</a>
             </li>
             <li>
               <a target ="_blank" href="https://www.linkedin.com/in/devpozza/" class="linkedin">Linkedin</a>
@@ -71,5 +73,8 @@
       </div>
     </div>
   </main>
+<!--JS Script-->
+<script src="src/JavaScript/index.js"></script>
+
 </body>
 </html>
