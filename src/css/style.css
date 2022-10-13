@@ -1,0 +1,141 @@
+body {
+  background-image: url(../Images/fundo-site.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: 'VT323', monospace;
+  color: #f3f3f3;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.card {
+  background-color: #070b12;
+  width: 370px;
+  border: 2px solid #e126d9;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card .minhas-info {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.card .minhas-info img {
+  border-radius: 50px;
+  border: 4px solid #02b08f;
+  width: 96px;
+  height: 96px;
+}
+
+.card .minhas-info .nome {
+  font-size: 26px;
+}
+
+.card .minhas-info .cargo {
+  font-size: 20px;
+  color: #b8bbc5;
+}
+
+.card .conteudo {
+  margin-top: 15px;
+}
+
+.card .conteudo .abas {
+  display: flex;
+}
+
+.card .conteudo .abas .aba {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.card .abas img {
+  width: 30px;
+}
+
+.card .abas .aba.selecionada {
+  background-color: #262626;
+}
+
+.card .info-abas {
+  background-color: #262626;
+}
+
+.card .abas .aba:hover {
+  background-color: #414141;
+}
+
+.info-abas .info {
+  min-height: 260px;
+  padding: 15px;
+  display: none;
+}
+
+.info-abas .info.selecionada {
+  display: block;
+}
+
+.info-abas .sub-titulo {
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.info-abas .descricao {
+  font-size: 20px;
+  max-height: 180px;
+  overflow-y: auto;
+  padding-right: 15px;
+}
+
+.info-abas .descricao span {
+  color: #02b08f;
+}
+
+.midias-sociais {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.midias-sociais li a {
+  width: 250px;
+  display: block;
+  color: #f3f3f3;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.midias-sociais .curriculo {
+  background-color: #06c185;
+}
+
+.midias-sociais .linkedin {
+  background-color: #1d87bd;
+}
+
+.midias-sociais .github {
+  background-color: #545454;
+}
+
+.midias-sociais li a:hover {
+  opacity: 0.7;
+}
