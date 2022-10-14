@@ -104,7 +104,21 @@ body {
   max-height: 180px;
   overflow-y: auto;
   padding-right: 15px;
+  scroll-behavior: smooth;
 }
+
+.info-abas .descricao::-webkit-scrollbar {
+  width: 5px;
+  border: blueviolet;
+  border-radius: 25px;
+}
+
+.info-abas .descricao::-webkit-scrollbar-thumb {
+  background-color: blueviolet;
+  border-radius: 25px;
+}
+
+
 
 .info-abas .descricao span {
   color: #02b08f;
