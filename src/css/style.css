@@ -1,5 +1,5 @@
 body {
-  background-image: url(../Images/fundo-site.jpg);
+  background-image: url(../Images/fundo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -19,6 +19,7 @@ body {
   border: 2px solid #e126d9;
   border-radius: 10px;
   overflow: hidden;
+
 }
 
 .card .minhas-info {
@@ -30,7 +31,7 @@ body {
 }
 
 .card .minhas-info img {
-  border-radius: 50px;
+  border-radius: 35px;
   border: 4px solid #02b08f;
   width: 96px;
   height: 96px;
