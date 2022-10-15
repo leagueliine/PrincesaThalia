@@ -1,7 +1,6 @@
  let aba = document.getElementsByClassName('aba');
- console.log(aba)
  let conteudo = document.getElementsByClassName('info');
- console.log(conteudo)
+ let texto = document.getElementById('spanTitulo');
 
   let selectSession0 = function(){
     aba[1].classList.add('selecionada')
@@ -33,28 +32,46 @@
     selectSession1();
   });
  
- /* const aba = document.getElementsByClassName('aba');
-  console.log(aba)
+ let typeWriter = function (elemento) {
+  const textArray = elemento.innerHTML.split('');
+  elemento.innerHTML = '';
+  textArray.forEach((letra, i) => {
+    setTimeout( () => elemento.innerHTML += letra, 55 * i)
+  });
+ };
 
-  const conteudo = document.getElementsByClassName('info')
-  console.log(conteudo)
+ typeWriter(texto)
 
-  //aba[1].onclick = () => conteudo[0].classList.remove("selecionada") || conteudo[1].classList.add("selecionada");
-  aba[1].onclick = () => aba[0].classList.remove("selecionada") || aba[1].classList.add("selecionada");
+ const controls = document.querySelectorAll(".control");
+let currentItem = 0;
+const items = document.querySelectorAll(".item");
+const maxItems = items.length;
 
+controls.forEach((control) => {
+  control.addEventListener("click", (e) => {
+    isLeft = e.target.classList.contains("arrow-left");
 
-  aba[1].onclick = () => { 
-    aba[1].classList.add("selecionada");
-  if(aba){
-    aba[0].classList.contains('selecionada')
-    aba[0].classList.remove('selecionada')
-  }};
+    if (isLeft) {
+      currentItem -= 1;
+    } else {
+      currentItem += 1;
+    }
 
-    aba[0].onclick = () => { 
-      aba[0].classList.add("selecionada");
-    if(aba){
-      aba[1].classList.contains('selecionada')
-      aba[1].classList.remove('selecionada')
-    };
-  };
-*/
+    if (currentItem >= maxItems) {
+      currentItem = 0;
+    }
+
+    if (currentItem < 0) {
+      currentItem = maxItems - 1;
+    }
+
+    items.forEach((item) => item.classList.remove("current-item"));
+
+    items[currentItem].scrollIntoView({
+      behavior: "smooth",
+      inline: "center"
+    });
+
+    items[currentItem].classList.add("current-item");
+  });
+});

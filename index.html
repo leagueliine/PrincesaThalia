@@ -9,23 +9,23 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=VT323&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="src/css/reset.css">
   <link rel="stylesheet" href="src/css/style.css">
-  <title>Digifólio</title>
+  <audio autoplay="autoplay">
+  <source src = "src/03 Otro Dia Que Va.m4a" type="audio/mp3" /> </audio>
+  <title>Princess Thalia</title>
 </head>
 <body>
-
-
   <!--palavras ('dev' + 'me')-->
   <main class="card">
     <div class="minhas-info">
-      <img src="src/Images/Logo.jpeg" alt="imagem de perfil">   
-      <h1 class="nome">Luiz Eduardo Pozza</h1>
-      <h2 class="cargo">Fullstack Developer Júnior</h2>     
+      <img src="src/Images/thalia/perfil-thalia.jpg" alt="imagem de perfil">   
+      <h1 class="nome">Thalia Knoth</h1>
+      <h2 class="cargo">Princesa Thalia</h2>     
       </div>
 
       <div class="conteudo">
         <ul class="abas">
           <li id = 'aba1' class="aba selecionada">
-            <img src="src/Images/sword.gif" alt="icone sobre mim">
+            <img src="src/Images/thalia/princesa2.gif" alt="icone sobre mim">
           </li>
           <li id = 'aba2' class="aba">
             <img src="src/Images/coracao.gif" alt="icone redes sociais">
@@ -38,43 +38,42 @@
             <h3 class="sub-titulo">Sobre mim</h3>
 
               <div id = "descricao" class="descricao">
-                <p>
-                  Olá, Meu nome é Luiz Eduardo Pozza, Seja bem-vindo ao meu cartão digital!
-                </p><br/>
-  
-                <p>
-                  Bom, acho que antes de qualquer coisa, sou um sonhador, alguem que 
-                  define suas metas e faz o que tem de ser feito para que o que almeja, seja alcançado.
-                  Uma de minhas metas, colocadas por ao menos 2 anos, é atuar como desenvolvedor, desde então venho
-                  estudando e aplicando o conhecimento agregado em projetos reais, como este. Esse é o meu cartão digital,
-                  um projeto desenvolvido afim de aplicar meu conhecimento e compartilhar um poouco com todos.
-                  Hoje me sinto seguro pra atuar como um desenvolvedor na área de front e de backEnd nas ferramentas de: 
-                  <span>HTML, CSS, JavaScript, NodeJs, BootStrap, Express, Dart.</span> 
-                  Acho extremamente necessário a reflexão sobre a vida e sobre todas nossas atitudes,
-                  e as coisas mais importantes pra mim é, apreciar o progresso e o caminho até a meta, pois o hoje é a dádiva, aprecie o presente e alcançar as metas impostas por mim mesmo, uma satisfação sem preço.
-                </p>
+                 <span id= 'spanTitulo' class = 'spanTitulo'>
+                  Amar nunca me coube mas sempre me transbordou, o rio de lembranças que um dia me afogou.
+                  e nesta correnteza fiquei a navegar, embora com certeza nao possa me salvar.
+                  e assim cada vez mais, me prendo neste nó, e cada grito meu, parece ser maior. 
+                  Thalia Knoth se casou com Luiz Eduardo Pozza em 2024, tiveram 2 filhos e ficaram juntos até o fim de suas vidas,
+                  suas filosofias de vida junto ao seu trabalho como uma grande psicologa renomada ultrapassaram gerações e hoje
+                  os conhecimentos providos pela mesma é usado como tratamento pra diversos problemas psicologicos.
+                  
+                  
+
+                  
+                </span> 
               </div>            
           </div>
 
           <div id="midias" class="info">
 
-            <h3 class="sub-titulo">Minhas mídias</h3>
-
-            <ul class="midias-sociais">
-            <li>
-              <a download = 'devCV' target="_blank" href="src/Images/Luiz Curriculo Dev.pdf" class="curriculo">Currículo</a>
-            </li>
-            <li>
-              <a target ="_blank" href="https://www.linkedin.com/in/devpozza/" class="linkedin">Linkedin</a>
-            </li>
-            <li>
-              <a target="_blank" href="https://github.com/leagueliine" class="github">Github</a>
-            </li>
-           </ul>
+            <h3 class="sub-titulo">Meu Carrossel</h3>
+            <div class="container">
+              <button class="arrow-left control" aria-label="Previous image">◀</button>
+              <button class="arrow-right control" aria-label="Next Image">▶</button>
+              <div class="gallery-wrapper">
+                <div class="gallery">
+                  <img src="src/Images/thalia/thalia3 (7).jpeg" alt="Beach Image" class="item current-item">
+                  <img src="src/Images/thalia/thalia3 (2).jpeg" alt="Animal Image" class="item current-item">
+                  <img src="src/Images/thalia/thalia3 (3).jpeg" alt="Street Image" class="item current-item">
+                  <img src="src/Images/thalia/thalia3 (4).jpeg" alt="Zoo Image" class="item current-item">
+                  <img src="src/Images/thalia/thalia3 (6).jpeg" alt="Model Image" class="item current-item">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
   </main>
 <!--JS Script-->
 <script src="src/JavaScript/index.js"></script>
